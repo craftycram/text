@@ -14,4 +14,22 @@ h1 {
   text-align: center;
   text-transform: none;
   overflow: hidden;
+  outline: none;
+  cursor: text;
+  border-radius: 8px;
+  padding: 10px;
+  transition: background-color 0.2s ease;
+}
+
+h1:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+h1:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+h1:empty:before {
+  content: attr(placeholder);
+  color: #999;
 }
